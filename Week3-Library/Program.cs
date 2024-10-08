@@ -4,6 +4,13 @@
     string Author;
     string ISBN;
 
+    public Book(string bookTitle, string bookAuthor, string bookISBN)
+    {
+        Title = bookTitle;
+        Author = bookAuthor;
+        ISBN = bookISBN;
+    }
+
     void DisplayInfo()
     {
         Console.WriteLine("");
@@ -16,20 +23,10 @@
     {
         // create a new instance (object) of the Book class
         // note how the object name differs from the class name
-        Book book = new Book();
-
-        // This information is for one book in our library
-        book.Title = "C# for beginners";
-        book.Author = "BillGates";
-        book.ISBN = "12345678";
-
-        Book book2 = new Book();
-        book2.Title = "C# Methods and classes";
-        book2.Author = "Microsoft";
-        book2.ISBN = "55667778";
+        Book book = new Book("C# for beginners", "Bill Gates", "1234567");
 
         // Output the book information to the console
         book.DisplayInfo();
-        book2.DisplayInfo();
+        
     }
 }
