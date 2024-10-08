@@ -1,26 +1,8 @@
-﻿class Book
+﻿using Week3_Library;
+
+class Program
 {
-    string Title;
-    string Author;
-    string ISBN;
-    int Pages;
-
-    public Book(string bookTitle, string bookAuthor, string bookISBN, int bookPages)
-    {
-        Title = bookTitle;
-        Author = bookAuthor;
-        ISBN = bookISBN;
-        Pages = bookPages;
-    }
-
-    void DisplayInfo()
-    {
-        Console.WriteLine("");
-        Console.WriteLine($"Book title: {Title}");
-        Console.WriteLine($"Book Author: {Author}");
-        Console.WriteLine($"Book ISBN: {ISBN}");
-        Console.WriteLine($"Number of pages: {Pages}");
-    }
+    
 
     static void Main(string[] args)
     {
